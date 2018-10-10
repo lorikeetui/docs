@@ -2,6 +2,7 @@
   "name": "aragon-ui-gallery",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://lorikeet.github.io/docs/",
   "dependencies": {
     "@aragon/ui": "^0.18.2",
     "gh-pages": "^2.0.1",
