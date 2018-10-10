@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@aragon/ui": "^0.18.2",
+    "gh-pages": "^2.0.1",
     "history": "^4.7.2",
     "markdown-it": "^8.4.0",
     "markdown-it-anchor": "^5.0.2",
@@ -19,7 +20,8 @@
     "build": "webpack",
     "build:production": "NODE_ENV=production webpack && npm run update-assets",
     "build:production:stats": "NODE_ENV=production INSPECT_BUNDLE=1 webpack && npm run update-assets",
-    "update-assets": "rm -rf dist/aragon-ui && cp -r node_modules/@aragon/ui/dist dist/aragon-ui"
+    "update-assets": "rm -rf dist/aragon-ui && cp -r node_modules/@aragon/ui/dist dist/aragon-ui",
+    "deploy": "NODE_ENV=production npm run build && gh-pages -d dist"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
