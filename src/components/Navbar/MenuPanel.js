@@ -56,10 +56,10 @@ class Panel extends React.Component {
           onClose={() => this.setState({ opened: false })}
         >
           <Container>
-            <NavbarLink href={"/docs"} target="_blank">
+            <NavbarLink href={"/docs"}>
               Docs
             </NavbarLink>
-            <NavbarLink href={"/downloads"} target="_blank">
+            <NavbarLink href={"https://lorikeetui.github.io/website/downloads/"}>
               Downloads
             </NavbarLink>
             <Divider />

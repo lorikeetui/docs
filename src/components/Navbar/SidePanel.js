@@ -54,7 +54,7 @@ class SidePanel extends React.PureComponent {
             >
               <PanelHeader>
                 <h1>
-                  <SafeLink href="www.lorikeet.com">
+                  <SafeLink href="https://lorikeetui.github.io/website/">
                     <LogoImg src={logo} />
                   </SafeLink>
                 </h1>
