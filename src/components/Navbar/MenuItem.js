@@ -20,8 +20,6 @@ const StyledMenuItem = styled.li`
     align-items: center;
     padding: 0 15px;
     font-size: 15px;
-    color: ${({ active }) =>
-      active ? theme.positiveText : theme.textSecondary};
   }
   a {
     text-decoration: none;
@@ -32,13 +30,14 @@ const StyledMenuItem = styled.li`
       padding: 7px 0;
     }
     span:hover {
-      color: ${theme.textPrimary};
+      color: rgb(50, 50, 93);
     }
   }
   .active a {
     span {
-      color: ${theme.textPrimary};
-      border-bottom: solid 2px black;
+      color: rgb(50, 50, 93);
+      font-weight: 800;
+      border-bottom: 1px solid rgb(50, 50, 93);
     }
   }
 `;
