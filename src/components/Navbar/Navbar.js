@@ -21,9 +21,9 @@ class Navbar extends React.Component {
   render() {
     const { onOpen, title } = this.props;
     const menuItems = [
-      ["https://lorikeetui.github.io/website/", "Overview"],
+      ["https://lorikeet.design", "Overview"],
       ["/docs", "Docs", true],
-      ["https://lorikeetui.github.io/website/downloads/", "Downloads"]
+      ["https://lorikeet.design/downloads/", "Downloads"]
     ];
 
     return (
