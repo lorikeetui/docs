@@ -8,9 +8,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackMonitor = require('webpack-monitor')
 
 const PRODUCTION = process.env.NODE_ENV === 'production'
-const PUBLIC_PATH = '/docs/'
+const PUBLIC_PATH = ''
 const BASE_HTML_CONF = {
-  publicUrl: PUBLIC_PATH,
   template: './public/index.html',
 }
 
@@ -43,7 +42,7 @@ module.exports = {
       pages: path.resolve(__dirname, 'src/pages'),
       comps: path.resolve(__dirname, 'src/components'),
       src: path.resolve(__dirname, 'src'),
-      'ui-src': path.resolve(__dirname, '../src'),
+      'ui-components': path.resolve(__dirname, '/src/ui-components'),
     },
   },
   module: {
@@ -84,9 +83,9 @@ module.exports = {
   plugins: (() => {
     let plugins = [
       new CleanWebpackPlugin(['dist']),
-      new webpack.DefinePlugin({
-        PUBLIC_PATH: JSON.stringify(PUBLIC_PATH),
-      }),
+      // new webpack.DefinePlugin({
+      //   PUBLIC_PATH: JSON.stringify(PUBLIC_PATH),
+      // }),
       new HtmlWebpackPlugin(BASE_HTML_CONF),
       new webpack.DefinePlugin({
         ARAGON_UI_PATH: JSON.stringify(PRODUCTION ? '/aragon-ui/' : '/'),
@@ -108,7 +107,7 @@ module.exports = {
     return plugins
   })(),
   output: {
-    publicPath: PUBLIC_PATH,
+    // publicPath: PUBLIC_PATH,
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
