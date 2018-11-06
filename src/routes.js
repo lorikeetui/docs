@@ -79,6 +79,6 @@ export const PAGE_GROUPS = [
 ];
 
 export const PAGES = [
-  preparePage([PagePrinciples, "Lorikeet - Docs", "/"]),
+  preparePage([PagePrinciples, "Principles", "/"]),
   ...PAGE_GROUPS.reduce((pages, group) => pages.concat(group.pages), [])
 ];

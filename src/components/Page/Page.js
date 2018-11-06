@@ -69,8 +69,8 @@ const StyledPage = styled.section`
   > h1 {
     margin-bottom: 40px;
     font-weight: 600;
-    font-size: 24px;
     color: #000;
+    font-size: 35px;
   }
   h2,
   h3 {
@@ -80,17 +80,41 @@ const StyledPage = styled.section`
   h2 {
     margin-top: 60px;
     margin-bottom: 30px;
-    font-weight: 600;
-    font-size: 18px;
-    color: #000;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 37px;
+    font-size: 22px;
+    color: #424770;
   }
   h3 {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: #32325D;
   }
   p {
     margin-bottom: 30px;
     line-height: 2;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 25px;
+    font-size: 15px;
+    color: #424770;
+  }
+  .short {
+    max-width: 600px;
+  }
+  .divider {
+    width: 80%
+    mix-blend-mode: normal;
+    opacity: 0.32;
+    border: 1.5px solid #979797;
+    margin: 15px auto;
   }
 `;
 
