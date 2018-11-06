@@ -29,7 +29,7 @@ class Navbar extends React.Component {
     return (
       <LorikeetNav id="navbar">
         <BreakPoint from="medium">
-          <SafeLink href="">
+          <SafeLink href="https://lorikeet.design/">
             <img src={Logo} />
           </SafeLink>
         </BreakPoint>
