@@ -16,19 +16,8 @@ const Container = styled(DemoContainer)`
 `
 
 const PageText = ({ title }) => (
-  <Page title={title} readme={readme}>
-    <Page.Demo opaque>
-      <Container>
-        <div>
-          <Text.Paragraph size="xsmall">X-Small Text</Text.Paragraph>
-          <Text.Paragraph size="small">Small Text</Text.Paragraph>
-          <Text.Paragraph size="normal">Normal Text</Text.Paragraph>
-          <Text.Paragraph size="large">Large Text</Text.Paragraph>
-          <Text.Paragraph size="xlarge">X-Large Text</Text.Paragraph>
-          <Text.Paragraph size="xxlarge">XX-Large Text</Text.Paragraph>
-        </div>
-      </Container>
-    </Page.Demo>
+  <Page title={title}>
+    
   </Page>
 )
 
