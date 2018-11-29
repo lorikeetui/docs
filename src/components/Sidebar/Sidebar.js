@@ -25,7 +25,7 @@ class Sidebar extends React.PureComponent {
                       {pages.map((page, i) => (
                         <MenuItem
                           key={page.path}
-                          active={page === activePage}
+                          active={activePage ? page.name === activePage.name : false}
                           path={page.path}
                           name={page.name}
                           onOpen={onOpen}
