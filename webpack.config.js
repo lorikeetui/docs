@@ -8,7 +8,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const WebpackMonitor = require('webpack-monitor')
 
 const PRODUCTION = process.env.NODE_ENV === 'production'
-const PUBLIC_PATH = ''
+const PUBLIC_PATH = (PRODUCTION ? 'https://docs.lorikeet.design/' : 'http://localhost:8080/')
+console.log("P",PUBLIC_PATH);
 const BASE_HTML_CONF = {
   template: './public/index.html',
 }
@@ -107,7 +108,7 @@ module.exports = {
     return plugins
   })(),
   output: {
-    // publicPath: PUBLIC_PATH,
+    publicPath: PUBLIC_PATH,
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
