@@ -157,6 +157,7 @@ const PanelCloseButton = styled.button`
 
 const LogoImg = styled.img`
   margin: 0 0 20px 0;
+  max-width: 123px;
 `;
 
 export default SidePanel;

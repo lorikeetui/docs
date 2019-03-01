@@ -30,7 +30,7 @@ class Navbar extends React.Component {
       <LorikeetNav id="navbar">
         <BreakPoint from="medium">
           <SafeLink href="https://lorikeet.design/">
-            <img src={Logo} />
+            <LogoImg src={Logo} />
           </SafeLink>
         </BreakPoint>
         <End>
@@ -104,4 +104,7 @@ const End = styled.div`
   }
 `;
 
+const LogoImg = styled.img`
+  max-width: 123px;
+`;
 export default Navbar;
